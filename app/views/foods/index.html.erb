@@ -1,6 +1,6 @@
-<h1><%= @total_results_count %> <%= @search_string %> results</h1>
+<h1><%= facade.total_results_count %> <%= facade.search_string %> results</h1>
 
-<% @foods.each do |food| %>
+<% facade.foods.each do |food| %>
   <div class="food-item">
     <ul>
       <li>NDB Number: <%= food.ndb %></li>
