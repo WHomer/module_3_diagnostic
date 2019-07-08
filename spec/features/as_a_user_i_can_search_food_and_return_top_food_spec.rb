@@ -20,18 +20,3 @@ feature 'as a user' do
     end 
   end
 end
-
-# And for each of the foods I should see:
-# - The food's NDB Number
-# - The food's name
-# - The food group to which the food belongs
-# - The food's data source
-# - The food's manufacturer
-
-
-  # "offset": 0,
-  # "group": "Branded Food Products Database",
-  # "name": "ONE POTATO TWO POTATO, PLAIN JAYNES, SWEET POTATO CHIPS, UPC: 785654000544",
-  # "ndbno": "45094945",
-  # "ds": "LI",
-  # "manu": "Dieffenbach's Potato Chips"
