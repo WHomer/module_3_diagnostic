@@ -13,7 +13,11 @@ class FoodsController < ApplicationController
     end
 
     response = @conn.get('/ndb/search/')
-    @results = JSON.parse(response.body, symbolize_names: true)
-    require 'pry'; binding.pry
+    results = JSON.parse(response.body, symbolize_names: true)[:list]
+    @total_results_count = results[:total]
+
+    @foods = results[:item].map do |result|
+      Food.new(result)
+    end
   end
 end
