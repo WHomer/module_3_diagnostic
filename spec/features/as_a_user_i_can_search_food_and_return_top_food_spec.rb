@@ -1,10 +1,10 @@
 require 'rails_helper'
 
 feature 'as a user' do
-  scenerio 'i can fill in a search form and return results' do
+  scenario 'i can fill in a search form and return results' do
     visit root_path
 
-    fill 'q', with: 'sweet potatoes'
+    fill_in 'q', with: 'sweet potatoes'
     click_on 'Search'
 
     expect(current_path).to eq(foods_path)
