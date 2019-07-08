@@ -2,7 +2,7 @@ class Food
   attr_reader :ndb,
               :name,
               :group,
-              :data_source
+              :data_source,
               :manufacturer
 
   def initialize(attributes)

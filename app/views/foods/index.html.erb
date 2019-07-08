@@ -1,0 +1,13 @@
+<h1><%= @total_results_count %> <%= @search_string %> results</h1>
+
+<% @foods.each do |food| %>
+  <div class="food-item">
+    <ul>
+      <li>NDB Number: <%= food.ndb %></li>
+      <li>Name: <%= food.name %></li>
+      <li>Group: <%= food.group %></li>
+      <li>Datasource: <%= food.data_source %></li>
+      <li>Manufacturer: <%= food.manufacturer %></li>
+    </ul>
+  </div>
+<% end %>

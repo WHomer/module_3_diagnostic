@@ -9,9 +9,9 @@ feature 'as a user' do
 
     expect(current_path).to eq(foods_path)
     expect(page).to have_content('531 sweet potatoes results')
-    expect(page).to have_selector('li', 10)
+    expect(page).to have_selector('div.food-item', count: 10)
 
-    within(first('.food')) do
+    within(first('.food-item')) do
       expect(page).to have_content("NDB Number: 45094945")
       expect(page).to have_content("Name: ONE POTATO TWO POTATO, PLAIN JAYNES, SWEET POTATO CHIPS, UPC: 785654000544")
       expect(page).to have_content("Group: Branded Food Products Database")
